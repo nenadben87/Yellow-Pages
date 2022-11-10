@@ -1,0 +1,335 @@
+:root{
+  --yellow-color: #ffd966;
+  --blue-color: #729ec6;
+  --dark-color: #333;
+  --dark-blue-color: #0e466c;
+  --white-color: #fff;
+  --grey-color: #e4ecf6;
+  --red-color: #990000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.small-modal.active {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--dark-color);
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 9rem; 
+}
+
+.small-modal {
+  display: none;
+}
+
+.small-modal-content {
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 5px solid var(--yellow-color);
+  border-radius: 5px;
+}
+
+.small-modal-content p {
+  margin-bottom: 3rem;
+}
+
+.small-modal-content button {
+  text-decoration: none;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--dark-color);
+  border-radius: 5px;
+}
+
+.small-modal-content button:hover {
+  cursor: pointer;
+}
+
+.modal.active {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--dark-color);
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem; 
+}
+
+.modal {
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--yellow-color);
+  color: var(--white-color);
+  padding: 0.5rem;
+  width: 40%;
+  border: 2px solid var(--white-color);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.modal-header i {
+  margin-left: 3rem;
+  padding: 0.5rem;
+}
+
+.modal-header i:hover {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey-color);
+  width: 40%;
+  padding: 1rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-control input {
+  padding-top: 0.5rem;
+  border-radius: 3px;
+  border: 2px solid var(--blue-color)
+}
+
+.form-control input {
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.modal-bottom {
+  background-color: var(--yellow-color);
+  width: 40%;
+  padding: 0.5rem;
+  border: 2px solid var(--white-color);
+  border-radius: 0px 0px 5px 5px;
+}
+
+.modal-bottom button {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+}
+
+.modal-bottom button:hover {
+  background-color: #668eb2;
+  cursor: pointer;
+}
+
+.error.active {
+  color: var(--red-color);
+  display: block;
+}
+
+.error {
+  display: none;
+}
+
+/* Wrapper */
+.wrapper {
+  position: relative
+}
+
+/* Navigation */
+nav {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--yellow-color);
+  color: var(--dark-color);
+  border-bottom: 1px solid var(--dark-color);
+  padding: 1rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.user-div-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-div-1 div {
+  margin-left: 0.5rem;
+}
+
+.user-div-1 i {
+  font-size: 1.2rem;
+}
+
+.user-div-2 {
+  margin-left: 2rem;
+}
+
+/* Search and Add Business section */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-add-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--grey-color);
+  color: var(--dark-color);
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.search-div label {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.search-input {
+  width: 400px;
+  padding-top: 0.8rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  outline: none;
+  border: 2px solid var(--blue-color);
+}
+
+.add-btn {
+  background-color: var(--dark-blue-color);
+  color: var(--white-color);
+  border: 1px solid var(--dark-color);
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+}
+
+.add-btn:hover {
+  background-color: #26587a;
+  cursor: pointer;
+}
+
+/* Company List */
+.letter-wrapper-a,
+.letter-wrapper-b,
+.letter-wrapper-c,
+.letter-wrapper-d,
+.letter-wrapper-e,
+.letter-wrapper-f,
+.letter-wrapper-g,
+.letter-wrapper-h,
+.letter-wrapper-i,
+.letter-wrapper-j,
+.letter-wrapper-k,
+.letter-wrapper-l,
+.letter-wrapper-m,
+.letter-wrapper-n,
+.letter-wrapper-o,
+.letter-wrapper-p,
+.letter-wrapper-q,
+.letter-wrapper-r,
+.letter-wrapper-s,
+.letter-wrapper-t,
+.letter-wrapper-u,
+.letter-wrapper-v,
+.letter-wrapper-w,
+.letter-wrapper-x,
+.letter-wrapper-y,
+.letter-wrapper-z {
+  display: none;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 9.5%;
+  margin-bottom: 3%;
+}
+
+.letter-wrapper-a.active,
+.letter-wrapper-b.active,
+.letter-wrapper-c.active,
+.letter-wrapper-d.active,
+.letter-wrapper-e.active,
+.letter-wrapper-f.active,
+.letter-wrapper-g.active,
+.letter-wrapper-h.active,
+.letter-wrapper-i.active,
+.letter-wrapper-j.active,
+.letter-wrapper-k.active,
+.letter-wrapper-l.active,
+.letter-wrapper-m.active,
+.letter-wrapper-n.active,
+.letter-wrapper-o.active,
+.letter-wrapper-p.active,
+.letter-wrapper-q.active,
+.letter-wrapper-r.active,
+.letter-wrapper-s.active,
+.letter-wrapper-t.active,
+.letter-wrapper-u.active,
+.letter-wrapper-v.active,
+.letter-wrapper-w.active,
+.letter-wrapper-x.active,
+.letter-wrapper-y.active,
+.letter-wrapper-z.active {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 9.5%;
+  margin-bottom: 3%;
+}
+
+.letter {
+  font-size: 2rem;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: 0.5rem;
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+}
+
+.company {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.company-name,
+.company-address,
+.company-phone,
+.company-work {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 2rem 1rem;
+  border: 1px solid var(--dark-color); 
+  width: 100%;
+}
+
+.title {
+  font-weight: bold;
+}
