@@ -39,24 +39,24 @@
  .letter-wrapper-k.active,
  .letter-wrapper-l.active,
  .letter-wrapper-m.active,
-.letter-wrapper-n.active,
-.letter-wrapper-o.active,
-.letter-wrapper-p.active,
-.letter-wrapper-q.active,
-.letter-wrapper-r.active,
-.letter-wrapper-s.active,
-.letter-wrapper-t.active,
-.letter-wrapper-u.active,
-.letter-wrapper-v.active,
-.letter-wrapper-w.active,
-.letter-wrapper-x.active,
-.letter-wrapper-y.active,
+ .letter-wrapper-n.active,
+ .letter-wrapper-o.active,
+ .letter-wrapper-p.active,
+ .letter-wrapper-q.active,
+ .letter-wrapper-r.active,
+ .letter-wrapper-s.active,
+ .letter-wrapper-t.active,
+ .letter-wrapper-u.active,
+ .letter-wrapper-v.active,
+ .letter-wrapper-w.active,
+ .letter-wrapper-x.active,
+ .letter-wrapper-y.active,
  .letter-wrapper-z.active {
   width: 97%;
   margin-left: 1.5%;
 }
 
-  .company span {
+ .company span {
     font-size: 1.4rem;
   }
 

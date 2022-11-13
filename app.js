@@ -15,8 +15,8 @@ let phoneInput = document.querySelector('#phone-input');
 let workInput = document.querySelector('#work-input');
 
 // Reg Exp Variables
-const regName = /^([A-Z])[a-z]{1,8}\s?([a-zA-Z0-9]{1,8})$/;
-const regAddress = /^([A-Z])[a-z]{1,8}\s?([a-zA-Z]{1,8})\s([0-9]{1,4})$/;
+const regName = /^([A-Z])[a-z]{1,10}\s?([a-zA-Z0-9]{1,10})$/;
+const regAddress = /^([A-Z])[a-z]{1,10}\s?([a-zA-Z]{1,10})\s([0-9]{1,4})$/;
 const regPhone = /(\+?\(?)([0-9]{3})\)?\s?([0-9]{1,2})?\s?([0-9]{7})$/;
 const regWork = /^([a-zA-Z])(\s{1,})?/;
 
@@ -314,8 +314,6 @@ class UI {
 }
 
 const ui = new UI();
-
-
 
 
 
